@@ -1,23 +1,24 @@
-// Developer:CAREY Agape 
-// Get 10 numbers from user and find the sum of all the numbers 
+// Sum.java
+//Developer : Manasseh TODD
+// Get 10 numbers from users and find the sum of all the numbers
+
 import java.util.Scanner;
 
 public class Sum{
-	public static void main(String [] args){
-	Scanner input = new Scanner(System.input0);
-
-	int num;
-	int i = 1;
-	int num = 0;
-	
-	
-		while(i <= 10){
-		System.out.printf("Eter num%d: ",i);
-		num = input.nextInt();
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
 		
-		Sum += num;
-		i++;
+		int num;
+		int	i = 1;
+		int sum = 0;
+		
+		while(i <= 10){
+			System.out.printf("Enter num%d: ",i);
+			num = input.nextInt();
+			
+			sum += num;
+			i++;
 		}
-	
+		System.out.print(sum);
 	}
 }

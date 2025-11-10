@@ -1,20 +1,24 @@
+// Control Structure
+// SelectionStatement.java
+// Autor: Manasseh TODD
+// learning about Control Structure.
+
+import java.util.Scanner;
+
 public class SelectionStatement{
-	public static void main(String[] args){
-		int age = 18;
-		//single selection statement 
-		if(age >=18){
-			System.out.println("Wow, you are an adult");
-			System.out.println("Being an adult SUCKS!");
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Enter Age: ");
+		int age= input.nextInt();
+		
+		if(age >= 18) {
+			System.out.printf("Wow, you are an adult now%nand will have
+			to state paying for bills now \uD83D\uDE02");
 		}
-		
-		//Double Selection Statement
-		int num1 = 5;
-		int num2 = 25;
-		
-		if (num1 > num2)
-			System.out.printf("%d is greater than %d%n",num1,num2);
-		
-		else
-			System.out.printf("%d is greater than %d%n",num2,num1);
+		else {
+			System.out.printf("Sorry you are not of age for this program, go back");
+		}
 	}
 }
